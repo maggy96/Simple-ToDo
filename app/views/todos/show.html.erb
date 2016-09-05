@@ -1,14 +1,6 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @todo.title %>
-</p>
-
-<p>
-  <strong>Detail:</strong>
-  <%= @todo.detail %>
-</p>
-
+<div class="card card-block">
+  <h3 class="card-title"><%= @todo.title %></h3>
+  <p class="card-text"><%= @todo.detail %></p>
+</div>
 <%= link_to 'Edit', edit_todo_path(@todo) %> |
 <%= link_to 'Back', todos_path %>
