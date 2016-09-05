@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+# User Logins
+gem 'devise' 
+# Bootstrap style and font-awesome font
+gem 'bootstrap'
+gem 'font-awesome-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
