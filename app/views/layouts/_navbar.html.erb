@@ -1,8 +1,9 @@
 <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-  <a class="navbar-brand" href="#">Simple ToDo</a>
+  <%= link_to('Simple ToDo', root_path, class: "navbar-brand")  %>  
   <ul class="nav navbar-nav pull-xs-right">
     <li class="nav-item">
-      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <%# <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> %>
+      <%= link_to('Home', root_path, class: "nav-link")  %>  
     </li>
     <% if user_signed_in? %>
       <li class="nav-item">
@@ -16,8 +17,5 @@
         <%= link_to('Register', new_user_registration_path, class: "nav-link") %>
       </li>
     <% end %>
-    <li class="nav-item">
-      <a class="nav-link" href="#">About</a>
-    </li>
   </ul>
 </nav>
